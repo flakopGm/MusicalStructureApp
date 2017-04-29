@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="caratula_pistas_musica">88dp</dimen>
+</resources>

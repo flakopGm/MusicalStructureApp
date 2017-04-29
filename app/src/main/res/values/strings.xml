@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name" translatable="false">Musical Structure App</string>
+    <string name="title_activity_shop_music" translatable="false">ShopMusic</string>
+
+    <string name="first_screen">Diseño de 3 botones para ir a diferentes actividades, reproductor,
+        lista de reproducción y tienda de música.</string>
+    <string name="second_screen">Esta pantalla muestra el título de la canción, su autor y la
+        portada, un botón para Canción favorita, un botón para ir a la tienda, otro para ir a
+        la lista de canciones,
+        controles para subir, bajar y silenciar el volumen Además de los botones clásicos de
+        reproducción, también cuenta con un ecualizador simulado. Toque la lista y seleccione una
+        canción para ver un ejemplo y toque el texto para ocultarlo.</string>
+    <string name="third_screen">Esta pantalla muestra las canciones más escuchadas del dispositivo,
+        con un viewPager por ejemplo, 3 botones inferiores, para crear una nueva lista de
+        reproducción, una lista aleatoria y para ver las listas guardadas.</string>
+    <string name="four_scren">Esta pantalla podría implementar un ecualizador.Toque para
+        ocultar.</string>
+    <string name="Reproduciendo">Reproducción Actual</string>
+    <string name="Musica">Música</string>
+    <string name="Ecualizador">Ecualizador</string>
+    <string name="ListaReproduccion">Lista Reproducción</string>
+    <string name="favorito">Pista añadida a favoritos</string>
+    <string name="desfavorito">Pista eliminada de favoritos</string>
+</resources>

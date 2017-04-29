@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/portada"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context="com.example.joni.musicalstructureapp.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/botonesInicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <!-- TextView Informativo -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@color/reproductor"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="casual"
+                android:text="@string/first_screen"
+                android:textAlignment="center"
+                android:textColor="#FFF"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Diferentes activities -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="234sp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/fondo"
+            android:orientation="horizontal">
+            <!-- Reproductor -->
+            <ImageView
+                android:id="@+id/playing"
+                style="@style/iconosInicio"
+                android:layout_marginLeft="16dp"
+                android:src="@mipmap/ic_music_video_white_18dp" />
+            <!-- Librería del dispositivo -->
+            <ImageView
+                android:id="@+id/libreria"
+                style="@style/iconosInicio"
+                android:src="@mipmap/ic_library_music_white_18dp" />
+            <!-- Tienda de música externa -->
+            <ImageView
+                android:id="@+id/shop"
+                style="@style/iconosInicio"
+                android:layout_marginRight="16dp"
+                android:src="@mipmap/ic_shopping_cart_white_18dp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

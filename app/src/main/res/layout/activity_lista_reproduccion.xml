@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    android:orientation="vertical"
+    tools:context="com.example.joni.musicalstructureapp.ListaReproduccion">
+
+    <!-- Carátulas canciones disponibles para seleccionar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            style="@style/caratulasListasReproduccion"
+            android:src="@drawable/ragbon" />
+
+        <ImageView
+            style="@style/caratulasListasReproduccion"
+            android:src="@drawable/dejavu" />
+
+        <ImageView
+            style="@style/caratulasListasReproduccion"
+            android:src="@drawable/brunomars" />
+
+        <ImageView
+            style="@style/caratulasListasReproduccion"
+            android:src="@drawable/edsherran" />
+    </LinearLayout>
+    <!-- TextView informativo -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:text="@string/third_screen"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="20sp" />
+
+    <View
+        style="@style/view"
+        android:background="@color/reproductor"></View>
+    <!-- Botones para la creación de listas de reproducción -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- Nueva Lista de reproducción. NO tiene funcionalidad -->
+        <ImageView
+            style="@style/botonesListaReproducion"
+            android:src="@mipmap/ic_playlist_add_white_18dp" />
+        <!-- Creación de lista de reproducción aleatoria. NO tiene funcionalidad, muestra
+        un toast. -->
+        <ImageView
+            android:id="@+id/lista_aleatoria"
+            style="@style/botonesListaReproducion"
+            android:src="@mipmap/ic_queue_music_white_18dp_2x" />
+        <!-- Listas guardadas y para editar. NO tiene funcionalidad.-->
+        <ImageView
+            android:id="@+id/listasGuardadas"
+            style="@style/botonesListaReproducion"
+            android:src="@mipmap/ic_playlist_play_white_18dp_2x" />
+    </LinearLayout>
+
+    <View
+        style="@style/view"
+        android:background="@color/reproductor"></View>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- Listado de supuestas listas guardadas en un ScrollView-->
+        <LinearLayout
+            android:id="@+id/cuadro_listas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <TextView
+                style="@style/estiloListas"
+                android:text="1- LISTA REPRODUCION PRUEBA" />
+
+            <TextView
+                style="@style/estiloListas"
+                android:text="2- LISTA REPRODUCCION CLASES DE SALSA" />
+
+            <TextView
+                style="@style/estiloListas"
+                android:text="3- LISTA REPRODUCION ENTRENAR" />
+
+            <TextView
+                style="@style/estiloListas"
+                android:text="4- LISTA REPRODUCION NUEVA" />
+
+            <TextView
+                style="@style/estiloListas"
+                android:text="5- LISTA REPRODUCCION CLASES DE ZUMBA" />
+
+            <TextView
+                style="@style/estiloListas"
+                android:text="6- LISTA REPRODUCION GYM" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="88dp"
+    tools:context="com.example.joni.musicalstructureapp.Pistas">
+
+    <!-- Carátula de la canción/disco -->
+    <ImageView
+        android:id="@+id/photoMusic"
+        android:layout_width="@dimen/caratula_pistas_musica"
+        android:layout_height="@dimen/caratula_pistas_musica"
+        android:background="@color/fondo"
+        tools:src="@mipmap/ic_music_note_white_18dp" />
+
+    <!-- Info canción compuesta por autor y título de canción -->
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/caratula_pistas_musica"
+        android:layout_toRightOf="@id/photoMusic"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingRight="50dp">
+
+        <TextView
+            android:id="@+id/autor"
+            style="@style/textViewListas"
+            android:fontFamily="casual"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/title_Song"
+            style="@style/textViewListas"
+            android:fontFamily="cursive|bold"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <!-- Icono like para marcar la canción como favorita -->
+    <ImageView
+        android:id="@+id/like_Song"
+        android:layout_width="34dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:background="@color/fondo" />
+</RelativeLayout>

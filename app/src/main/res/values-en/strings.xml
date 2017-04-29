@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Musical Structure App</string>
+    <string name="first_screen">3 button design to go to different activities, player, playlist</string>
+    <string name="four_scren">This screen could implement an equalizer. Touch to hide.</string>
+    <string name="second_screen">This screen shows the title of the song, its author and the cover, a button for favorite song, a button to go to the store, another to go to the list of songs, controls to raise, lower and mute the volume. Classic buttons Playback, it also features a simulated equalizer. Touch the list and select a song to see an example and touch the text to hide it.</string>
+    <string name="third_screen">This screen shows the most listened songs of the device, with a viewPager for example, then 3 lower buttons, to create a new playlist, a random list and to view the saved lists.</string>
+    <string name="Ecualizador">Equalizer</string>
+    <string name="ListaReproduccion">Playlist</string>
+    <string name="Musica">Music</string>
+    <string name="Reproduciendo">Current Reproduction</string>
+    <string name="desfavorito">Deleted track of favorites</string>
+    <string name="favorito">Track added to favorites</string>
+</resources>
